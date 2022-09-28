@@ -1,0 +1,19 @@
+.nyakupay{
+    margin-top: 1%;
+    width: 25em;
+    height:5em;
+    border-radius: 15px;
+    padding: 10px;
+
+    margin-left: 14%;
+}
+.saldo{
+    width: 70%;
+    height: 100%;
+    border-radius: 15px;
+    padding:10px;
+    color: white;
+    font-family: arial;
+    font-size: 12px;
+
+}

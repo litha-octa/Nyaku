@@ -1,17 +1,63 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import { Provider } from "react-redux";
+import ReactDOM from "react-dom";
+import App from "./App";
+import {
+  ChakraProvider,
+  extendTheme,
+  withDefaultColorScheme,
+} from "@chakra-ui/react";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+// import reduxStore from "./redux/store";
+
+ReactDOM.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    {/* <Provider store={reduxStore}> */}
+    <ChakraProvider
+      theme={extendTheme(
+        {
+          fonts: {
+            heading: "Mulish",
+            body: "Mulish",
+          },
+          colors: {
+            gray: {
+              100: "#F4F4F4",
+            },
+            primary: {
+              50: "#E5001C",
+              100: "#E5001C",
+              200: "#E5001C",
+              300: "#E5001C",
+              400: "#E5001C",
+              500: "#E5001C",
+              600: "#E5001C",
+              700: "#E5001C",
+              800: "#E5001C",
+              900: "#E5001C",
+            },
+          },
+          components: {
+            Checkbox: {
+              baseStyle: {
+                control: {
+                  _focus: {
+                    boxShadow: "none",
+                  },
+                },
+              },
+            },
+          },
+        },
+        withDefaultColorScheme({
+          colorScheme: "primary",
+          components: ["Checkbox"],
+        })
+      )}
+    >
+      <App />
+    </ChakraProvider>
+    {/* </Provider> */}
+  </React.StrictMode>,
+  document.getElementById("root")
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

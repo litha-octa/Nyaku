@@ -1,0 +1,13 @@
+.bodyTopup {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    padding: 0 100px;
+    border-width: 0.5px;
+    border-color: grey;
+    background-color: aqua;
+}
+.topupContainer{
+   background-color: bisque;
+}
