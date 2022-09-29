@@ -4,10 +4,46 @@
     width: 100%;
     height: auto;
     padding: 0 100px;
-    border-width: 0.5px;
-    border-color: grey;
-    background-color: aqua;
 }
 .topupContainer{
-   background-color: bisque;
+    width: 50%;
+   text-align: center;
+   font-family: roboto;
+   font-style: oblique;
+   font-weight: bold;
+   border-radius: 15px;
+   border-bottom-width: 2.5px;
+   border-bottom-style: solid;
+   border-bottom-color: red;
+}
+.topupInnerContainer{
+    display: flex;
+    flex-direction: row;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    justify-content: space-around;
+    color: 'white';
+}
+.icon-dot{
+    width: 2.5vw;
+    height: 2vw;
+    opacity: 0.5;
+}
+
+.topUp-TAB{
+    width: 100%;
+    justify-content: space-between;
+    border-radius: 25px;
+}
+.tab-item{
+    width: 55%;
+    border-radius:25px ;
+}
+.pulsa{
+    display: flex;
+    flex-direction: row;
+}
+.inputPulsa{
+    width: 90%;
+    margin-left: 2%;
 }

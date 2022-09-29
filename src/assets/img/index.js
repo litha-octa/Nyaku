@@ -14,6 +14,8 @@ import AkunkuIcon from './akunku.png';
 import HomeIcon from './home.png';
 import PersonSearch from './personSearch.png';
 
+import Dot3 from './dot3.png';
+
 
 export {
   SplashImg,
@@ -32,6 +34,7 @@ export {
   HomeIcon,
   PersonSearch,
   AkunkuIcon,
+  Dot3,
 };
 
 export const profilePic =
