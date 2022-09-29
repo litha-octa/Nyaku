@@ -4,6 +4,7 @@
     width: 100%;
     height: auto;
     padding: 0 100px;
+    margin-bottom: 20px;
 }
 .topupContainer{
     width: 50%;
@@ -44,6 +45,13 @@
     flex-direction: row;
 }
 .inputPulsa{
-    width: 90%;
+    width: 85%;
     margin-left: 2%;
+}
+
+@media screen (max-width: 768px) {
+    .topupInnerContainer {
+        display: flex;
+        flex-direction: column;
+    }
 }
