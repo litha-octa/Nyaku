@@ -7,7 +7,6 @@ const Navbar = () => {
       <div>
         <navbar style={styles.navbar}>
           <img src={NewLogo} style={styles.logoNav} alt="logo" />
-          <div style={styles.textNav}>Nyaku Bitung</div>
           <Input
             placeholder="Cari Kebutuhanmu Disini ...."
             style={styles.input}
@@ -35,7 +34,7 @@ const styles = {
     margin: 10,
   },
   logoNav: {
-    width: 70,
+    width: 170,
     height: 60,
   },
   input: {

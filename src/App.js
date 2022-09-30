@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Route, HashRouter, Routes } from "react-router-dom";
 
 import Home from './screen/Home'
+import ProductDetail from "./screen/ProductDetail";
 class App extends Component {
   componentDidUpdate() {
     window.scrollTo(0, 0);
@@ -12,6 +13,9 @@ class App extends Component {
         <div>
           <Routes>
             <Route exact path="/*" element={<Home />} />
+            <Route exact path="/Product-Detail" element={<ProductDetail/>}>
+            <Route exact path=":id" element={<ProductDetail/>}/>
+              </Route>
           </Routes>
         </div>
       </HashRouter>

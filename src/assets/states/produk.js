@@ -50,9 +50,23 @@ export const DummyProduk = [
   },
   {
     id: 7,
-    name: "Maybelline LipCream super Stay longlast 12 hr",
+    name: "Maybelline LipCream super Stay",
     img: "https://tse2.mm.bing.net/th?id=OIP.reTkFxbEgln-AUwdoH2zKAHaHa&pid=Api&P=0",
     price: "54.000",
     soldCount: "500++",
+  },
+  {
+    id: 8,
+    name: "Smartphone Oppo F11",
+    img: "https://tse2.mm.bing.net/th?id=OIP.UV7T2Y-ZOZiKG0U_SvS-_AHaHa&pid=Api&P=0",
+    price: "2.554.000",
+    soldCount: "90++",
+  },
+  {
+    id: 9,
+    name: "Kursi Geming Terbaru",
+    img:'https://tse3.mm.bing.net/th?id=OIP.Nc4prHqrLfiKHYPw9myoqQHaFo&pid=Api&P=0',
+    price: "1.725.000",
+    soldCount: "246",
   },
 ];

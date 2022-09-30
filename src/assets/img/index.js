@@ -2,7 +2,7 @@ import SplashImg from './newsplash.jpeg';
 import BigSplashImg from './newsplashbesar.jpeg';
 
 import CustService from './custService.png';
-import NewLogo from './newLogo.png';
+import NewLogo from './Logo.png';
 import Bima from './bima.png';
 import Bisa from './bisa.png';
 import Cctv from './cctv.png';
