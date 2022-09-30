@@ -16,6 +16,21 @@ import PersonSearch from './personSearch.png';
 
 import Dot3 from './dot3.png';
 
+//ICON KATEGORI 
+import BuahSayur from './iconKategori/BuahSayur.svg'
+import Elektronik from "./iconKategori/Elektronik.svg";
+import Fashion from "./iconKategori/Fashion.svg";
+import Kesehatan from "./iconKategori/Kesehatan.svg";
+import Lainnya from "./iconKategori/Lainnya.svg";
+import MakananMinuman from "./iconKategori/MakananMinuman.svg";
+import OlehOleh from "./iconKategori/OlehOleh.svg";
+import Pertanian from "./iconKategori/Pertanian.svg";
+import Perternakan from "./iconKategori/Perternakan.svg";
+import Seafood from "./iconKategori/Seafood.svg";
+import UMKM from "./iconKategori/UMKM.svg";
+
+
+
 
 export {
   SplashImg,
@@ -35,6 +50,22 @@ export {
   PersonSearch,
   AkunkuIcon,
   Dot3,
+
+  //export icon kategori
+  BuahSayur,
+  Elektronik,
+  Fashion,
+  Kesehatan,
+  Lainnya,
+  MakananMinuman,
+  OlehOleh,
+  Pertanian,
+  Perternakan,
+  Seafood,
+  UMKM,
+
+
+
 };
 
 export const profilePic =
