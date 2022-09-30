@@ -2,11 +2,14 @@ import React from 'react'
 import { Input } from "@chakra-ui/react";
 import { NewLogo, AkunkuIcon } from "../assets/img";
 import { colors } from "../assets/colors";
+import { Link } from 'react-router-dom';
 const Navbar = () => {
     return (
       <div>
         <navbar style={styles.navbar}>
-          <img src={NewLogo} style={styles.logoNav} alt="logo" />
+          <Link to="/#">
+            <img src={NewLogo} style={styles.logoNav} alt="logo" />
+          </Link>
           <Input
             placeholder="Cari Kebutuhanmu Disini ...."
             style={styles.input}
