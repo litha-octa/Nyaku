@@ -4,6 +4,7 @@ import { colors } from "../assets/colors";
 import { DummyProduk } from "../assets/states/produk";
 import '../assets/style/detailProduct.css';
 import Navbar from "../component/Navbar";
+import DisplayProduk from '../component/DisplayProduk'
 
 import {
     HStack,
@@ -85,6 +86,7 @@ const ProductDetail =()=>{
             </div>
           </div>
         </div>
+        <DisplayProduk/>
       </div>
     );
 }
