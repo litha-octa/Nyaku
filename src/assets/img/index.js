@@ -73,4 +73,3 @@ export const profilePic =
       // 'https://tse3.mm.bing.net/th?id=OIP.yulTOLuKjaFQDIcaKpZMAQHaEJ&pid=Api&P=0';
 export const dummyBanner =
   "https://ecs7.tokopedia.net/img/blog/seller/2018/05/Update-Article-seller-center-Sampul-Toko-Education-Article-Banner-1024x449.jpg";
-

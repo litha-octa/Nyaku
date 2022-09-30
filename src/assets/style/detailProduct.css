@@ -50,8 +50,25 @@
 .infoInput {
   margin: 0 0 0 5%;
 }
+.desc-container{
+width: 100%;
+padding: 2%;
+}
+.desc-product{
+width: 95%;
+margin : 2% 0 0 2.5%;
+padding: 2%;
+border-radius: 15px;
+color: white;
+font-family: roboto;
+}
+
+
+
+
 @media only screen and (max-width: 768px) {
   .detailContainer {
+    width: 100%;
     /* flex-direction: column; */
   }
   #imgProduct {
@@ -96,7 +113,6 @@
     margin-top: 1%;
     width: 98vw;
   }
-
   .infoName {
     width: 50%;
   }

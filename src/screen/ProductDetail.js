@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { colors } from "../assets/colors";
 import { DummyProduk } from "../assets/states/produk";
 import '../assets/style/detailProduct.css';
 import Navbar from "../component/Navbar";
 import DisplayProduk from '../component/DisplayProduk'
+import StoreInfo from "../component/StoreInfo";
 
 import {
     HStack,
@@ -14,6 +15,11 @@ import {
 } from "@chakra-ui/react";
 
 const ProductDetail =()=>{
+  const desc =
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+    useEffect(()=>{
+        window.scrollTo({top:0,left:0, behavior:'smooth'});
+    },[])
     const { getInputProps, getIncrementButtonProps, getDecrementButtonProps } =
       useNumberInput({
         step: 1,
@@ -71,7 +77,7 @@ const ProductDetail =()=>{
                   >
                     -
                   </Button>
-                  <Input {...input} style={{ textAlign: "center" }}/>
+                  <Input {...input} style={{ textAlign: "center" }} />
                   <Button
                     {...inc}
                     style={{
@@ -86,7 +92,21 @@ const ProductDetail =()=>{
             </div>
           </div>
         </div>
-        <DisplayProduk/>
+        <DisplayProduk />
+        <StoreInfo />
+        <div className="desc-container">
+          <div
+            style={{ fontFamily: "roboto", fontSize: 20, fontWeight: "bold" }}
+          >
+            Deskripsi Produk
+          </div>
+          <div
+            style={{ backgroundColor: colors.MERAHUTAMA }}
+            className="desc-product"
+          >
+            {desc}
+          </div>
+        </div>
       </div>
     );
 }
