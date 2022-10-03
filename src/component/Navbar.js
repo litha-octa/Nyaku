@@ -1,64 +1,53 @@
 import React from 'react'
-import { Input } from "@chakra-ui/react";
-import { NewLogo, AkunkuIcon } from "../assets/img";
+import { Input, Select } from "@chakra-ui/react";
+import { HamburgerIcon } from "@chakra-ui/icons";
+import { NewLogo, Akun,Chat,Notif, Keranjang, } from "../assets/img";
 import { colors } from "../assets/colors";
 import { Link } from 'react-router-dom';
+import '../assets/style/navbar.css';
+
 const Navbar = () => {
     return (
-      <div>
-        <navbar style={styles.navbar}>
+      <div style={{ backgroundColor: colors.MERAHUTAMA , padding: 2}}>
+        <navbar className="body-navbar">
           <Link to="/#">
-            <img src={NewLogo} style={styles.logoNav} alt="logo" />
+            <img src={NewLogo} className="logoNav" alt="logo" />
           </Link>
           <Input
+            focusBorderColor="white"
             placeholder="Cari Kebutuhanmu Disini ...."
-            style={styles.input}
-            _placeholder={styles.textInputNav}
+            className="inputNav"
+            variant="filled"
+            _placeholder={{ color: "grey" }}
           />
-          <img src={AkunkuIcon} alt="profileIcon" style={styles.navbarIcon2} />
+          <div className="selectNav">
+            <Select width={10} icon={<HamburgerIcon />} />
+          </div>
+          <div className="iconContainerNav">
+            <div className="iconNav">
+              <img src={Keranjang} alt="profileIcon" className="iconItem" />
+            </div>
+            <div className="iconNav">
+              <img src={Chat} alt="profileIcon" className="iconItem" />
+            </div>
+            <div className="iconNav">
+              <img src={Notif} alt="profileIcon" className="iconItem" />
+            </div>
+            <div className="iconNav">
+              <img src={Akun} alt="profileIcon" className="iconItem" />
+            </div>
+          </div>
         </navbar>
+        <div className="bottomSearchBar">
+          <Input
+            focusBorderColor="white"
+            placeholder="Cari Kebutuhanmu Disini ...."
+            variant="filled"
+            _placeholder={{ color: "grey" }}
+          />
+        </div>
       </div>
     );
 }
-const styles = {
-  navbar: {
-    width: "100%",
-    height: 70,
-    backgroundColor: colors.MERAHUTAMA,
-    flexDirection: "row",
-    display: "flex",
-    padding: 2,
-  },
-  textNav: {
-    color: colors.PUTIH,
-    fontFamily: "arial",
-    fontSize: 18,
-    fontWeight: "bold",
-    margin: 10,
-  },
-  logoNav: {
-    width: 170,
-    height: 60,
-  },
-  input: {
-    width: "50%",
-    marginLeft: "10%",
-    alignSelf: "center",
-    color: colors.PUTIH,
-    fontFamily: "arial",
-  },
-  textInputNav: {
-    color: colors.PUTIH,
-    fontFamily: "arial",
-    fontSize: 13,
-    fontWeight: "bold",
-    margin: 10,
-  },
-  navbarIcon2: {
-    width: 40,
-    height: 40,
-    marginLeft: "20%",
-    alignSelf: "center",
-  },
-};
+
 export default Navbar

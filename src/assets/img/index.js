@@ -1,19 +1,4 @@
-import SplashImg from './newsplash.jpeg';
-import BigSplashImg from './newsplashbesar.jpeg';
-
-import CustService from './custService.png';
 import NewLogo from './Logo.png';
-import Bima from './bima.png';
-import Bisa from './bisa.png';
-import Cctv from './cctv.png';
-import Chat from './chat.png';
-import VideoIcon from './video.png';
-import Bigram  from './bigram.png';
-import NyakuKomIcon from './nyakukom.png';
-import AkunkuIcon from './akunku.png';
-import HomeIcon from './home.png';
-import PersonSearch from './personSearch.png';
-
 import Dot3 from './dot3.png';
 
 //ICON KATEGORI 
@@ -29,26 +14,17 @@ import Perternakan from "./iconKategori/Perternakan.svg";
 import Seafood from "./iconKategori/Seafood.svg";
 import UMKM from "./iconKategori/UMKM.svg";
 
+//GENERAL ICON
+import Akun from './generalIcon/Akun.png';
+import Keranjang from "./generalIcon/Keranjang.png";
+import Chat from "./generalIcon/Chat.png";
+import Notif from "./generalIcon/Notification.png";
+
 
 
 
 export {
-  SplashImg,
-  BigSplashImg,
-
-  //AFTER FIXED MOCKUP
-  CustService,
   NewLogo,
-  Bima,
-  Bisa,
-  Cctv,
-  Chat,
-  VideoIcon,
-  Bigram,
-  NyakuKomIcon,
-  HomeIcon,
-  PersonSearch,
-  AkunkuIcon,
   Dot3,
 
   //export icon kategori
@@ -64,8 +40,11 @@ export {
   Seafood,
   UMKM,
 
-
-
+  //EXPORT ICON GENERAL
+  Akun,
+  Chat,
+  Notif,
+  Keranjang,
 };
 
 export const profilePic =

@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 import "../assets/style/storeInfo.css";
 import { colors } from "../assets/colors";
 import { Button } from "@chakra-ui/react";
@@ -21,7 +22,9 @@ const StoreInfo = () => {
         {store.name}
         <br />
         <Button className="btn-inStore">Chat Penjual</Button>
-        <Button className="btn-inStore">Kunjungi Toko</Button>
+        <Link to="/Store">
+          <Button className="btn-inStore">Kunjungi Toko</Button>
+        </Link>
       </div>
       <div className="store-detail">
         <div style={{ display: "flex", flexDirection: "row" }}>

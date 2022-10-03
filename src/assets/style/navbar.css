@@ -1,0 +1,95 @@
+.body-navbar {
+  width: 100%;
+  height: 70px;
+  flex-direction: row;
+  display: flex;
+  padding: 2px;
+}
+.logoNav {
+  width: 200px;
+  height: 60px;
+  margin: 5px 0 0 20px;
+}
+.selectNav {
+  display: none;
+}
+.inputNav {
+  width: 100px;
+  height: auto;
+  margin: 0 0 0 5%;
+  align-self: center;
+  color: white;
+  font-family: arial;
+}
+.iconContainerNav {
+  margin: 1% 0 0 4%;
+  display: flex;
+  flex-direction: row;
+  width: 25%;
+  justify-content: space-around;
+}
+.iconNav {
+  /* background-color: white; */
+  width: 45px;
+  height: 40px;
+  border-radius: 25px;
+}
+.iconItem {
+  width: 30px;
+  height: 30px;
+  align-self: center;
+  margin: 5px 0 0 7px;
+}
+.bottomSearchBar {
+visibility: hidden;
+display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .logoNav {
+    width: 200px;
+    height: 50px;
+  }
+  .iconContainerNav {
+    display: none;
+  }
+  .selectNav {
+    display: flex;
+    margin: 15px;
+  }
+}
+.bottomSearchBar {
+    visibility: hidden;
+}
+@media only screen and (max-width: 425px) {
+    .body-navbar {
+            width: 100%;
+            height: auto;
+        }
+  .logoNav {
+    width: 100%;
+    height: 100%;
+  }
+  .iconContainerNav {
+    display: none;
+  }
+  .selectNav {
+    display: flex;
+    margin: 5% 10% 0 25%;
+}
+  .inputNav {
+    display: none;
+  }
+  .bottomSearchBar {
+    width: 90%;
+    height: auto;
+    display: grid;
+    background-color: white;
+    border-radius: 10px;
+    visibility: visible;
+        margin: 0 0 2% 5%;
+        align-self: center;
+        color: white;
+        font-family: arial;
+  }
+}
