@@ -3,6 +3,7 @@ import Navbar from "../component/Navbar";
 import '../assets/style/homeStore.css';
 import { colors } from "../assets/colors";
 import { Tabs, TabList, TabPanels, Tab, TabPanel, Button } from "@chakra-ui/react";
+import Beranda from "../component/TabStore/Beranda";
 
 const HomeStore =()=>{
     const data = {
@@ -17,7 +18,8 @@ const HomeStore =()=>{
         <Navbar />
         <div
           className="storeContainer"
-          style={{ backgroundColor: colors.MERAHUTAMA }}>
+          style={{ backgroundColor: colors.MERAHUTAMA }}
+        >
           <img src={data.img} alt="profil toko" id="iconStore" />
           <div id="storeInnerContainer">
             <div id="store-name">{data.name}</div>
@@ -44,7 +46,7 @@ const HomeStore =()=>{
           </TabList>
           <TabPanels>
             <TabPanel>
-              <p>one!</p>
+              <Beranda />
             </TabPanel>
             <TabPanel>
               <p>two!</p>

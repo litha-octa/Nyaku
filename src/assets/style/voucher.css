@@ -1,0 +1,64 @@
+.voucher-title {
+  width: 250px;
+  font-size: 1.5em;
+  font-family: roboto;
+  font-weight: bold;
+  color: black;
+}
+.voucherContainer {
+  padding: 5px;
+  width: 98%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: scroll;
+  margin: 0 1%;
+}
+.voucherContainer::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+  overflow: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.item-voucher {
+  width: auto;
+  background-color: #ffdadc;
+  border-radius: 15px;
+  padding: 5px;
+  margin: 0 0 0 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.voucher-name {
+  width: 250px;
+  font-size: 1em;
+  font-family: roboto;
+  font-weight: bold;
+  color: red;
+  margin: 10px;
+}
+.voucher-minSpend {
+  font-size: 0.8em;
+  font-family: roboto;
+  font-weight: bold;
+  color: black;
+}
+.btn-voucher {
+  margin: 2% 0 2% 65%;
+  font-family: roboto;
+  font-size: 0.6em;
+}
+
+@media only screen and (max-width: 425px) {
+  .item-voucher {
+    padding: 3px;
+  }
+  .voucher-name {
+    width: 200px;
+    font-size: 1em;
+  }
+  .voucher-minSpend {
+    font-size: 0.8em;
+    margin: 0 0 0 5%;
+  }
+}
