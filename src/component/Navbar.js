@@ -1,50 +1,67 @@
 import React from 'react'
-import { Input, Select } from "@chakra-ui/react";
-import { HamburgerIcon } from "@chakra-ui/icons";
-import { NewLogo, Akun,Chat,Notif, Keranjang, } from "../assets/img";
+import { Input, InputGroup, Select, InputRightElement } from "@chakra-ui/react";
+import { HamburgerIcon, SearchIcon } from "@chakra-ui/icons";
+import {
+  NewLogo,
+  AkunWhite,
+  ChatWhite,
+  NotifWhite,
+  KeranjangWhite,
+} from "../assets/img";
 import { colors } from "../assets/colors";
 import { Link } from 'react-router-dom';
 import '../assets/style/navbar.css';
 
 const Navbar = () => {
     return (
-      <div style={{ backgroundColor: colors.MERAHUTAMA , padding: 2}}>
+      <div style={{ backgroundColor: colors.MERAHUTAMA, padding: 2 }}>
         <navbar className="body-navbar">
           <Link to="/#">
             <img src={NewLogo} className="logoNav" alt="logo" />
           </Link>
-          <Input
-            focusBorderColor="white"
-            placeholder="Cari Kebutuhanmu Disini ...."
-            className="inputNav"
-            variant="filled"
-            _placeholder={{ color: "grey" }}
-          />
+          <InputGroup className="inputNav">
+            <Input
+              focusBorderColor="white"
+              placeholder="Cari Kebutuhanmu Disini ...."
+              className="inputNav"
+              variant="filled"
+              _placeholder={{ color: "grey" }}
+            />
+            <InputRightElement
+              children={<SearchIcon color="black.500" />}
+              className='hideInPhone'
+            />
+          </InputGroup>
           <div className="selectNav">
             <Select width={10} icon={<HamburgerIcon />} />
           </div>
           <div className="iconContainerNav">
             <div className="iconNav">
-              <img src={Keranjang} alt="profileIcon" className="iconItem" />
+              <img src={KeranjangWhite} alt="profileIcon" className="iconNav" />
             </div>
             <div className="iconNav">
-              <img src={Chat} alt="profileIcon" className="iconItem" />
+              <img src={ChatWhite} alt="profileIcon" className="iconItem" />
             </div>
             <div className="iconNav">
-              <img src={Notif} alt="profileIcon" className="iconItem" />
+              <img src={NotifWhite} alt="profileIcon" className="iconItem" />
             </div>
             <div className="iconNav">
-              <img src={Akun} alt="profileIcon" className="iconItem" />
+              <img src={AkunWhite} alt="profileIcon" className="iconItem" />
             </div>
           </div>
         </navbar>
         <div className="bottomSearchBar">
-          <Input
-            focusBorderColor="white"
-            placeholder="Cari Kebutuhanmu Disini ...."
-            variant="filled"
-            _placeholder={{ color: "grey" }}
-          />
+          <InputGroup>
+            <Input
+              focusBorderColor="white"
+              placeholder="Cari Kebutuhanmu Disini ...."
+              variant="filled"
+              _placeholder={{ color: "grey" }}
+            />
+            <InputRightElement
+              children={<SearchIcon color="grey.500" />}
+            />
+          </InputGroup>
         </div>
       </div>
     );

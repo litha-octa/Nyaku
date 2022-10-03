@@ -20,6 +20,13 @@ import Keranjang from "./generalIcon/Keranjang.png";
 import Chat from "./generalIcon/Chat.png";
 import Notif from "./generalIcon/Notification.png";
 
+//GENERAL ICON PUTIH
+
+import AkunWhite from './generalIcon/AkunWhite.png';
+import KeranjangWhite from "./generalIcon/KeranjangWhite.png";
+import ChatWhite from "./generalIcon/ChatWhite.png";
+import NotifWhite from "./generalIcon/NotificationWhite.png";
+
 
 
 
@@ -45,6 +52,12 @@ export {
   Chat,
   Notif,
   Keranjang,
+
+  //EXPORT ICON GENERAL PUTIH
+  AkunWhite,
+  ChatWhite,
+  NotifWhite,
+  KeranjangWhite,
 };
 
 export const profilePic =
