@@ -1,0 +1,40 @@
+.review-container{
+    width: 100%;
+}
+
+.item-review{
+    width: 60%;
+    height: auto;
+    font-family: roboto;
+    margin:  0 0 15px 0;
+    padding: 10px;
+    border-bottom-style: solid;
+    border-bottom-color: red;
+    border-bottom-width:3px ;
+
+}
+.username-reviewer{
+    display: flex;
+    flex-direction: row;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.date-reviewer{
+    font-size: 10px;
+    font-style: italic;
+    color: grey;
+}
+.review-reviewer{
+    font-size: 15px;
+    color: black;
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width: 425px){
+.review-reviewer {
+        font-size: 10px;
+        color: black;
+        text-transform: capitalize;
+    }
+}

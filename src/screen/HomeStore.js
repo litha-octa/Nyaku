@@ -4,6 +4,7 @@ import '../assets/style/homeStore.css';
 import { colors } from "../assets/colors";
 import { Tabs, TabList, TabPanels, Tab, TabPanel, Button } from "@chakra-ui/react";
 import Beranda from "../component/TabStore/Beranda";
+import Review from "../component/TabStore/Review";
 
 const HomeStore =()=>{
     const data = {
@@ -55,7 +56,7 @@ const HomeStore =()=>{
               <p>ini untuk kategori</p>
             </TabPanel>
             <TabPanel>
-              <p>ini untuk Review</p>
+              <Review/>
             </TabPanel>
           </TabPanels>
         </Tabs>

@@ -1,6 +1,6 @@
 import React from "react";
-import { voucher } from "../../assets/states/voucherToko";
-import '../../assets/style/voucher.css';
+import { voucher } from "../../assets/states/statesInStore";
+import '../../assets/style/storeTab/tabBerandaToko.css';
 import {Button} from '@chakra-ui/react';
 
 const Beranda =()=>{
