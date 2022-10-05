@@ -35,6 +35,7 @@
 #btnItem {
     margin: 0 5px;
     color: white;
+    font-family: roboto;
     background-color: transparent;
     width: 100px;
 }

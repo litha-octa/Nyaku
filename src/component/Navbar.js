@@ -1,5 +1,5 @@
-import React from 'react'
-import { Input, InputGroup, Select, InputRightElement } from "@chakra-ui/react";
+import React, { useState } from 'react'
+import { Input, InputGroup, Select, InputRightElement, Button } from "@chakra-ui/react";
 import { HamburgerIcon, SearchIcon } from "@chakra-ui/icons";
 import {
   NewLogo,
@@ -12,7 +12,14 @@ import { colors } from "../assets/colors";
 import { Link } from 'react-router-dom';
 import '../assets/style/navbar.css';
 
-const Navbar = () => {
+const Navbar = ({navigation}) => {
+  const [keyword, setKeyword] = useState(' ')
+  const handleChange = (e) => setKeyword(e.target.value);
+const search = (id) => {
+  
+};
+
+
     return (
       <div style={{ backgroundColor: colors.MERAHUTAMA, padding: 2 }}>
         <navbar className="body-navbar">
@@ -25,12 +32,16 @@ const Navbar = () => {
               placeholder="Cari Kebutuhanmu Disini ...."
               className="inputNav"
               variant="filled"
+              onChange={handleChange}
+              value={keyword}
               _placeholder={{ color: "grey" }}
             />
-            <InputRightElement
-              children={<SearchIcon color="black.500" />}
-              className='hideInPhone'
-            />
+            <Link to={`/Product-List/${keyword}`}>
+              <InputRightElement
+                children={<SearchIcon color="black.500" />}
+                className="hideInPhone"
+              />
+            </Link>
           </InputGroup>
           <div className="selectNav">
             <Select width={10} icon={<HamburgerIcon />} />
@@ -57,10 +68,12 @@ const Navbar = () => {
               placeholder="Cari Kebutuhanmu Disini ...."
               variant="filled"
               _placeholder={{ color: "grey" }}
+              onChange={handleChange}
+              value={keyword}
             />
-            <InputRightElement
-              children={<SearchIcon color="grey.500" />}
-            />
+            <Link to={`/Product-List/${keyword}`}>
+              <InputRightElement children={<SearchIcon color="grey.500" />} />
+            </Link>
           </InputGroup>
         </div>
       </div>
